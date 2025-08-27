@@ -41,7 +41,7 @@ for(const callbtn of callButtons){
 
     let elementCreate = document.createElement("div");
     elementCreate.innerHTML = `
-                <div class="flex justify-between items-center bg-[#FAFAFA] p-4 mt-6 gap-3 rounded-lg">
+                <div class="flex justify-between items-center bg-[#FAFAFA] p-1 mt-4 gap-3 rounded-lg">
                     <div>
                         <h1 class="font-semibold text-sm mb-2">${title}</h1>
                         <p class="text-sm">${cardNumber}</p>
@@ -52,11 +52,37 @@ for(const callbtn of callButtons){
                 </div>
     `
         document.getElementById("sidebar_card_container").append(elementCreate);
-
     })
-
 }
 
 
 
+
+// clear button functionality
+document.getElementById("clear_btn").addEventListener("click",function(){
+    document.getElementById("sidebar_card_container").innerHTML = "";
+})
     
+
+
+
+
+// copy button functionality
+// navigator.clipboard.writeText(textToCopy);
+
+const copyButtons = document.getElementsByClassName("btn_copy");
+
+
+for(const copyBtn of copyButtons){
+    copyBtn.addEventListener("click",function(){
+
+    const hotLineNumber = copyBtn.parentNode.parentNode.children[3].innerText;
+    navigator.clipboard.writeText(hotLineNumber);
+    
+    alert("নাম্বার কপি হয়েছে " + hotLineNumber)
+
+    const copyPoint = document.getElementById("copy_point").innerText;
+    const copyPointCount = Number(copyPoint) + 1;
+    document.getElementById("copy_point").innerText = copyPointCount;
+})
+}

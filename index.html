@@ -16,7 +16,7 @@
 
 
 
-<body class="bg-[#ddeee4]">
+<body class="bg-[#ecf7f1]">
 
     <!-- header section -->
     <header class="bg-white">
@@ -49,7 +49,7 @@
     
                 <div class="flex justify-center items-center w-32 h-14 rounded-[50px] bg-[#00A63E]">
                     <p class="text-white">
-                        <span>2</span> copy
+                        <span id="copy_point">0</span> copy
                     </p>
                 </div>
     
@@ -81,12 +81,12 @@
         <div id="card_section" class="grid grid-cols-12 gap-7">
 
 
-            <div class="col-span-9">
-                <div id="card_container" class="grid grid-cols-3 gap-7">
+            <div class="col-span-12 sm:col-span-9">
+                <div id="card_container" class="grid grid-cols-1 sm:grid-cols-3 gap-y-3 sm:gap-7">
 
 
                     <!-- card-1 -->
-                    <div class="card justify-between bg-white p-8 rounded-2xl shadow-md">
+                    <div class="card justify-between bg-white p-8 rounded-2xl shadow-sm">
 
                         <div class="flex justify-between items-center mb-4">
                             <div class="bg-[#FFE3E2] w-16 p-2 rounded-xl">
@@ -98,11 +98,15 @@
                         </div>
 
                         <h1 class="font-bold text-[16px] card_title">National Emergency Number</h1>
+
                         <p class="text-gray-600 text-xl card_subtitle">National Emergency</p>
-                        <h1 class="font-bold text-xl mt-6 card_number">999</h1>
+
+                        <h1 class="font-bold text-xl mt-3 card_number">999</h1>
+
                         <button class="bg-gray-300 py-[6px] px-[16px] rounded-2xl">All</button>
 
-                        <div class="flex justify-between mt-6">
+                        <div class="flex justify-between mt-3">
+
                             <button class="btn_copy border border-[#D4D6D5] rounded-md py-2 px-6">
                                 <i class="fa-regular fa-clone"></i>copy
                             </button>
@@ -116,7 +120,7 @@
 
 
                     <!-- card-2 -->
-                    <div class="card justify-between bg-white p-8 rounded-2xl shadow-md">
+                    <div class="card justify-between bg-white p-8 rounded-2xl shadow-sm">
                         <div class="flex justify-between items-center mb-4">
                             <div class="bg-[#DFEFFF] w-16 p-2 rounded-xl">
                                 <img class="w-8 mx-auto" src="./assets/police.png" alt="">
@@ -128,10 +132,10 @@
 
                         <h1 class="font-bold text-xl card_title">Police Helpline Number</h1>
                         <p class="text-gray-600 text-xl card_subtitle">Police</p>
-                        <h1 class="font-bold text-xl mt-6 card_number">999</h1>
+                        <h1 class="font-bold text-xl mt-3 card_number">999</h1>
                         <button class="bg-gray-300 py-[6px] px-[16px] rounded-2xl">Police</button>
 
-                        <div class="flex justify-between mt-6">
+                        <div class="flex justify-between mt-3">
                             <button class="btn_copy border border-[#D4D6D5] rounded-md py-2 px-6">
                                 <i class="fa-regular fa-clone"></i>copy
                             </button>
@@ -145,7 +149,7 @@
 
 
                     <!-- card-3 -->
-                    <div class="card justify-between bg-white p-8 rounded-2xl shadow-md">
+                    <div class="card justify-between bg-white p-8 rounded-2xl shadow-sm">
                         <div class="flex justify-between items-center mb-4">
                             <div class="bg-[#FFE3E2] w-16 p-2 rounded-xl">
                                 <img class="w-8 mx-auto" src="./assets/fire-service.png" alt="">
@@ -157,10 +161,10 @@
 
                         <h1 class="font-bold text-xl card_title">Fire Service Number</h1>
                         <p class="text-gray-600 text-xl card_subtitle">Fire Service</p>
-                        <h1 class="font-bold text-xl mt-6 card_number">999</h1>
+                        <h1 class="font-bold text-xl mt-3 card_number">999</h1>
                         <button class="bg-gray-300 py-[6px] px-[16px] rounded-2xl">Fire</button>
 
-                        <div class="flex justify-between mt-6">
+                        <div class="flex justify-between mt-3">
                             <button class="btn_copy border border-[#D4D6D5] rounded-md py-2 px-6">
                                 <i class="fa-regular fa-clone"></i>copy
                             </button>
@@ -174,7 +178,7 @@
 
 
                     <!-- card-4 -->
-                    <div class="card justify-between bg-white p-8 rounded-2xl shadow-md">
+                    <div class="card justify-between bg-white p-8 rounded-2xl shadow-sm">
                         <div class="flex justify-between items-center mb-4">
                             <div class="bg-[#FFE3E2] w-16 p-2 rounded-xl">
                                 <img class="w-8 mx-auto" src="./assets/ambulance.png" alt="">
@@ -186,10 +190,10 @@
 
                         <h1 class="font-bold text-xl card_title">Ambulance Service</h1>
                         <p class="text-gray-600 text-xl card_subtitle">Ambulance</p>
-                        <h1 class="font-bold text-xl mt-6 card_number">1994-999999</h1>
+                        <h1 class="font-bold text-xl mt-3 card_number">1994-999999</h1>
                         <button class="bg-gray-300 py-[6px] px-[16px] rounded-2xl">Health</button>
 
-                        <div class="flex justify-between mt-6">
+                        <div class="flex justify-between mt-3">
                             <button class="btn_copy border border-[#D4D6D5] rounded-md py-2 px-6">
                                 <i class="fa-regular fa-clone"></i>copy
                             </button>
@@ -203,7 +207,7 @@
 
 
                     <!-- card-5 -->
-                    <div class="card justify-between bg-white p-8 rounded-2xl shadow-md">
+                    <div class="card justify-between bg-white p-8 rounded-2xl shadow-sm">
                         <div class="flex justify-between items-center mb-4">
                             <div class="bg-[#FFE3E2] w-16 p-2 rounded-xl">
                                 <img class="w-8 mx-auto" src="./assets/emergency.png" alt="">
@@ -215,10 +219,10 @@
 
                         <h1 class="font-bold text-[16px] card_title">Women & Child Helpline</h1>
                         <p class="text-gray-600 text-xl card_subtitle">Women & Child Helpline</p>
-                        <h1 class="font-bold text-xl mt-6 card_number">109</h1>
+                        <h1 class="font-bold text-xl mt-3 card_number">109</h1>
                         <button class="bg-gray-300 py-[6px] px-[16px] rounded-2xl">help</button>
 
-                        <div class="flex justify-between mt-6">
+                        <div class="flex justify-between mt-3">
                             <button class="btn_copy border border-[#D4D6D5] rounded-md py-2 px-6">
                                 <i class="fa-regular fa-clone"></i>copy
                             </button>
@@ -232,7 +236,7 @@
 
 
                     <!-- card-6 -->
-                    <div class="card justify-between bg-white p-8 rounded-2xl shadow-md">
+                    <div class="card justify-between bg-white p-8 rounded-2xl shadow-sm">
                         <div class="flex justify-between items-center mb-4">
                             <div class="bg-[#FFE3E2] w-16 p-2 rounded-xl">
                                 <img class="w-8 mx-auto" src="./assets/coin.png" alt="">
@@ -244,10 +248,10 @@
 
                         <h1 class="font-bold text-[16px] card_title">Anti-Corruption Helpline</h1>
                         <p class="text-gray-600 text-xl card_subtitle">Anti-Corruption</p>
-                        <h1 class="font-bold text-xl mt-6 card_number">106</h1>
+                        <h1 class="font-bold text-xl mt-3 card_number">106</h1>
                         <button class="bg-gray-300 py-[6px] px-[16px] rounded-2xl">Govt</button>
 
-                        <div class="flex justify-between mt-6">
+                        <div class="flex justify-between mt-3">
                             <button class="btn_copy border border-[#D4D6D5] rounded-md py-2 px-6">
                                 <i class="fa-regular fa-clone"></i>copy
                             </button>
@@ -261,7 +265,7 @@
 
 
                     <!-- card-7 -->
-                    <div class="card justify-between bg-white p-8 rounded-2xl shadow-md">
+                    <div class="card justify-between bg-white p-8 rounded-2xl shadow-sm">
                         <div class="flex justify-between items-center mb-4">
                             <div class="bg-[#FFE3E2] w-16 p-2 rounded-xl">
                                 <img class="w-8 mx-auto" src="./assets/emergency.png" alt="">
@@ -273,10 +277,10 @@
 
                         <h1 class="font-bold text-xl card_title">Electricity Helpline</h1>
                         <p class="text-gray-600 text-xl card_subtitle">Electricity Outage</p>
-                        <h1 class="font-bold text-xl mt-6 card_number">16216</h1>
+                        <h1 class="font-bold text-xl mt-3 card_number">16216</h1>
                         <button class="bg-gray-300 py-[6px] px-[16px] rounded-2xl">Electricity</button>
 
-                        <div class="flex justify-between mt-6">
+                        <div class="flex justify-between mt-3">
                             <button class="btn_copy border border-[#D4D6D5] rounded-md py-2 px-6">
                                 <i class="fa-regular fa-clone"></i>copy
                             </button>
@@ -290,7 +294,7 @@
 
 
                     <!-- card-8 -->
-                    <div class="card justify-between bg-white p-8 rounded-2xl shadow-md">
+                    <div class="card justify-between bg-white p-8 rounded-2xl shadow-sm">
                         <div class="flex justify-between items-center mb-4">
                             <div class="bg-[#FFE3E2] w-16 p-2 rounded-xl">
                                 <img class="w-8 mx-auto" src="./assets/brac.png" alt="">
@@ -302,10 +306,10 @@
 
                         <h1 class="font-bold text-xl card_title">Brac Helpline</h1>
                         <p class="text-gray-600 text-xl card_subtitle">Brac</p>
-                        <h1 class="font-bold text-xl mt-6 card_number">16445</h1>
+                        <h1 class="font-bold text-xl mt-3 card_number">16445</h1>
                         <button class="bg-gray-300 py-[6px] px-[16px] rounded-2xl">NGO</button>
 
-                        <div class="flex justify-between mt-6">
+                        <div class="flex justify-between mt-3">
                             <button class="btn_copy border border-[#D4D6D5] rounded-md py-2 px-6">
                                 <i class="fa-regular fa-clone"></i>copy
                             </button>
@@ -319,7 +323,7 @@
 
 
                     <!-- card-9 -->
-                    <div class="card justify-between bg-white p-8 rounded-2xl shadow-md">
+                    <div class="card justify-between bg-white p-8 rounded-2xl shadow-sm">
                         <div class="flex justify-between items-center mb-4">
                             <div class="bg-[#FFE3E2] w-16 p-2 rounded-xl">
                                 <img class="w-8 mx-auto" src="./assets/Bangladesh-Railway.png" alt="">
@@ -331,10 +335,10 @@
 
                         <h1 class="font-bold text-[16px] card_title">Bangladesh Railway Helpline </h1>
                         <p class="text-gray-600 text-xl card_subtitle">Bangladesh Railway</p>
-                        <h1 class="font-bold text-xl mt-6 card_number">163</h1>
+                        <h1 class="font-bold text-xl mt-3 card_number">163</h1>
                         <button class="bg-gray-300 py-[6px] px-[16px] rounded-2xl">Travel</button>
 
-                        <div class="flex justify-between mt-6">
+                        <div class="flex justify-between mt-3">
                             <button class="btn_copy border border-[#D4D6D5] rounded-md py-2 px-6">
                                 <i class="fa-regular fa-clone"></i>copy
                             </button>
@@ -356,7 +360,7 @@
 
 
 
-            <div id="side_bar" class="bg-white col-span-3 rounded-xl shadow-xl p-6">
+            <div id="side_bar" class="bg-white col-span-3 rounded-xl shadow-sm p-6">
                 
                 <div class="flex justify-between items-center">
                     <div class="flex items-center gap-2">
@@ -370,9 +374,9 @@
                 
 
                 <div id="sidebar_card_container">
-                    
+
                 </div>
-                <!-- <div class="flex justify-between items-center bg-[#FAFAFA] p-4 mt-6 gap-3 rounded-lg">
+                <!-- <div class="flex justify-between items-center bg-[#FAFAFA] p-4 mt-3 gap-3 rounded-lg">
                     <div>
                         <h1 class="font-semibold text-sm mb-2">Fire Service Number</h1>
                         <p class="text-sm">999</p>
