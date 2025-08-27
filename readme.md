@@ -1,18 +1,18 @@
 1. What is the difference between getElementById, getElementsByClassName, and querySelector / querySelectorAll?
 
 answer:
-<!-- getElementById: -->
+getElementById:
 getElementById নির্দিষ্ট একটি element কে সিলেক্ট করতে getElementById ব্যবহার হয়। getElementById সবসময় একটাই element রিটার্ন করে। ।
 
-<!-- getElementsByClassName -->
+getElementsByClassName:
 getElementsByClassName দিয়ে অনেকগুলো element একসাথে সিলেক্ট করা যায়। getElementsByClassName একটি HTMLCollection রিটার্ন করে। 
 
 
-<!-- querySelector -->
+querySelector:
 CSS selector ব্যবহার করে প্রথম matching element কে সিলেক্ট করে। querySelector শুধুমাত্র একটি element কে সিলেক্ট করতে পারে। 
 
 
-<!-- querySelectorAll -->
+querySelectorAll:
 querySelectorAll দিয়ে অনেকগুলা element কে একসাথে সিলেক্ট করা যায়।
 querySelectorAll দিয়ে সবগুলো matching element সিলেক্ট করা যায়।
 
@@ -28,13 +28,13 @@ querySelectorAll দিয়ে সবগুলো matching element সিলে�
 2. How do you create and insert a new element into the DOM?
 
 answer:
-<!-- element create -->
+element create:
 let element = document.createElement("div") এভাবে নতুন element create করা হয়।
 
-<!-- element এর ভিতর content add করা  -->
+element এর ভিতর content add করা :
 element.innerHTML = `<p> HELLO WORLD</p>` এভাবে element এর ভিতর content add করা হয়।
 
-<!-- insert করা -->
+insert করা:
 parent.append(element) এভাবে element কে DOM এ  ঢুকিয়ে দেয়া হয়।
 
 
